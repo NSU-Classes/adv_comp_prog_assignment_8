@@ -1,3 +1,5 @@
+// Assignment 2: Middle of Three Numbers
+// Helmi Hernandez
 public class Main {
     public static void main(String[] args) {
         CurrencyHelmi currencyHelmi = new CurrencyHelmi();

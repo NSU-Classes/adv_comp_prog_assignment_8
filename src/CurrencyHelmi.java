@@ -1,4 +1,5 @@
-import java.io.InputStream;
+// Assignment 2: Middle of Three Numbers
+// Helmi Hernandez
 import java.util.Scanner;
 
 public class CurrencyHelmi {

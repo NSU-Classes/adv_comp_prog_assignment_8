@@ -1,3 +1,5 @@
+// Assignment 2: Middle of Three Numbers
+// Helmi Hernandez
 import java.util.Random;
 
 public class DblBufferHelmi {
