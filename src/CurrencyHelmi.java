@@ -16,6 +16,7 @@ public class CurrencyHelmi {
                 "Use D for Dollars, E for Euros, or Y for Yen.\n" +
                 "Enter an amount followed by the currency: ");
 
+        // Splits the user's input
         input = scanner.nextLine().split(" ");
         setAmount(Double.parseDouble(input[0]));
         setCurrencyType(input[1].charAt(0));
@@ -26,6 +27,7 @@ public class CurrencyHelmi {
     }
 
     // region Getters and Setters
+    // Conversions are performed in their respective setters.
     public double getAmount() {
         return amount;
     }
