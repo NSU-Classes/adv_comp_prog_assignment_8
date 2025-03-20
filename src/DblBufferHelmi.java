@@ -19,9 +19,9 @@ public class DblBufferHelmi {
         bufferCount = 0;
     }
 
+    // Add a random 2-digit double, rounded to 2 decimals.
     void addRandomDouble(){
-        // Add a random 2-digit double, rounded to 2 decimals.
-        // Add actions to prevent buffer overflow.
+        // If statement prevents buffer overflow
         if (bufferCount < buffer.length) {
             double min = 10.00;
             double max = 99.99;

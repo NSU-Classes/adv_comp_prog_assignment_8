@@ -11,7 +11,6 @@ public class CurrencyHelmi {
 
     public void getCurrFromUser(){
     String[] input;
-        int charIndex;
         Scanner scanner = new Scanner(System.in);
         System.out.println("I will ask you for an amount and the currency. " +
                 "Use D for Dollars, E for Euros, or Y for Yen.\n" +
@@ -26,6 +25,7 @@ public class CurrencyHelmi {
         setAmountYen(amount);
     }
 
+    // region Getters and Setters
     public double getAmount() {
         return amount;
     }
@@ -92,4 +92,5 @@ public class CurrencyHelmi {
                 this.amountYen = amountYen;
         }
     }
+    // endregion
 }
