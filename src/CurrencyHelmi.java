@@ -21,6 +21,7 @@ public class CurrencyHelmi {
         setAmount(Double.parseDouble(input[0]));
         setCurrencyType(input[1].charAt(0));
 
+        // Calls the methods to set the conversions
         setAmountDollars(amount);
         setAmountEuros(amount);
         setAmountYen(amount);

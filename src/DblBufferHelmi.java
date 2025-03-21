@@ -51,27 +51,28 @@ public class DblBufferHelmi {
         int buffer_size = 5;
         DblBufferHelmi w_argument = new DblBufferHelmi(buffer_size);
 
-        // Add random doubles to the DblBufferHelmi Class
+        // Add random doubles
         for (int i = 0; i < wo_argument.BUFFER_SIZE; i++){
             wo_argument.addRandomDouble();
         }
-
         for (int i = 0; i < w_argument.BUFFER_SIZE; i++){
             w_argument.addRandomDouble();
         }
 
-        // Test that the buffers won't go over their limit
+        // Test that the buffers won't flow over
         wo_argument.addRandomDouble();
         w_argument.addRandomDouble();
 
-        // Print out statements
-        System.out.println("\nFor the DblBufferHelmi Class without an argument:");
-        for (int i = 0; i < wo_argument.BUFFER_SIZE; i++){
-            System.out.printf("Item %d: %.2f\n", i, wo_argument.buffer[i]);
-        }
-        System.out.println("\nFor the DblBufferHelmi Class with an argument:");
-        for (int i = 0; i < w_argument.BUFFER_SIZE; i++){
-            System.out.printf("Item %d: %.2f\n", i, w_argument.buffer[i]);
-        }
+        // Testing getBufferCount
+        System.out.printf("\nBufferCount for the DblBufferHelmi Class without an argument: %d",
+                wo_argument.getBufferCount());
+        System.out.printf("\nBufferCount for the DblBufferHelmi Class with an argument: %d",
+                w_argument.getBufferCount());
+
+        // Testing printToScreen
+        System.out.println("\nPrintToScreen for the DblBufferHelmi Class without an argument:");
+        wo_argument.printToScreen();
+        System.out.println("\nPrintToScreen for the DblBufferHelmi Class with an argument:");
+        w_argument.printToScreen();
     }
 }
